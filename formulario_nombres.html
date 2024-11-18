@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Nombres</title>
+
+    <style>
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+form {
+    background-color: #ffffff;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    width: 100%;
+}
+
+h1 {
+    text-align: center;
+    color: #333333;
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #555555;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #cccccc;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+h3 {
+    text-align: center;
+    color: #333333;
+    margin-top: 20px;
+}
+
+
+</style>
+
+
+
+</head>
+<body>
+   <h1>Formulario de Nombres</h1>
+<form>
+    <label for="name1">Nombre 1:</label>
+    <input type="text" id="name1" name="name1">
+    <label for="name2">Nombre 2:</label>
+    <input type="text" id="name2" name="name2">
+    <label for="name3">Nombre 3:</label>
+    <input type="text" id="name3" name="name3">
+    <button type="submit">Enviar</button>
+</form>
+
+<br><br>
+    {% if nombre_largo is not none %}
+        <h3>El nombre con más caracteres es: {{ nombre_largo }}</h3>
+        <h3>Cantidad de caracteres: {{ largo }}</h3>
+    {% endif %}
+</body>
+</html>

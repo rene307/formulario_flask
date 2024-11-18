@@ -1,0 +1,77 @@
+
+ <h1>Formulario de Nombres</h1><br><br>
+    <form method="POST">
+        <label for="nombre1">Nombre 1:</label>
+        <input type="text" id="nombre1" name="nombre1" required>
+        <br>
+        <label for="nombre2">Nombre 2:</label>
+        <input type="text" id="nombre2" name="nombre2" required>
+        <br>
+        <label for="nombre3">Nombre 3:</label>
+        <input type="text" id="nombre3" name="nombre3" required>
+        <br><br>
+        <button type="submit">Enviar</button>
+    </form>
+
+    body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+form {
+    background-color: #ffffff;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    width: 100%;
+}
+
+h1 {
+    text-align: center;
+    color: #333333;
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #555555;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #cccccc;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+h3 {
+    text-align: center;
+    color: #333333;
+    margin-top: 20px;
+}
